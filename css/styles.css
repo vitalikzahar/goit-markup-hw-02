@@ -29,13 +29,22 @@ color: var(--title-text-color);
 .logo-item {
     color: var(--title-blue-color);
 }
-.site-nav .list {
+.list {
+    list-style: none;
+}
+
+.list-item {
+    text-decoration: none;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5; 
 color: var(--title-text-color);
 
 }
+.list .list-item:active {
+color: var(--title-blue-color);
+}
+
 .link {
 color: var(--primary-text-color);
 text-decoration: none;
@@ -43,6 +52,9 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
+}
+.link:active {
+    color: var(--title-blue-color);
 }
 .hero {
     background-color: var(--bacground-color-heroo-footer);
@@ -63,6 +75,10 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 background: #4D5AE5;
 color: var(--title-wite-color);
+cursor: pointer;
+}
+.hero-button:hover, .hero-button:focus {
+    background: #404BBF;
 }
 
 .section-title.item {
@@ -99,4 +115,20 @@ color: #F4F4FD;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
+}
+/* portfolio */
+.filter-button {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color:#4D5AE5;
+background: #F4F4FD;
+
+cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+    color: #FFFFFF;
+    background: #404BBF;
 }
