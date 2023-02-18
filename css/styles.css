@@ -5,6 +5,12 @@
     --title-wite-color: #FFFFFF;
     --title-blue-color: #4D5AE5;
     --bacground-color-heroo-footer: #2E2F42;
+    --button-hover-color: #404BBF;
+    --button-title-color: #4D5AE5;
+    --footer-logo-white: #F4F4FD;
+    --text-item-color: #E7E9FC;
+    --filtr-button-bacgr-color-white: #F4F4FD;
+    --filtr-button-hover-white: #FFFFFF;
 }
 
 body {
@@ -73,12 +79,12 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
-background: #4D5AE5;
+background: var(--button-title-color);
 color: var(--title-wite-color);
 cursor: pointer;
 }
 .hero-button:hover, .hero-button:focus {
-    background: #404BBF;
+    background:var(--button-hover-color);
 }
 
 .section-title.item {
@@ -107,10 +113,10 @@ line-height: 1.2;
 
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #F4F4FD;
+color: var(--footer-logo-white);
 }
 .text-item {
- color: #E7E9FC;
+    color: var(--text-item-color);
 
 font-weight: 400;
 font-size: 16px;
@@ -122,19 +128,15 @@ line-height: 1.5;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
-color:#4D5AE5;
-background: #F4F4FD;
+color:var(--button-title-color);
+background: --filtr-button-bacgr-color-white
 
 cursor: pointer;
 
-width: 116px;
-height: 48px;
-background: #F4F4FD;
-border: 1px solid #E7E9FC;
-border-radius: 4px;
+
 }
 .filter-button:hover,
 .filter-button:focus {
-    color: #FFFFFF;
-    background: #404BBF;
+  color: var(--filtr-button-hover-white);
+    background:var(--button-hover-color);
 }
