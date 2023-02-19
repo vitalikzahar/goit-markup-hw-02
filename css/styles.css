@@ -6,6 +6,7 @@
     --title-blue-color: #4D5AE5;
     --bacground-color-heroo-footer: #2E2F42;
     --button-hover-color: #404BBF;
+    --link-hover-color: #404BBF;
     --button-title-color: #4D5AE5;
     --footer-logo-white: #F4F4FD;
     --text-item-color: #E7E9FC;
@@ -33,23 +34,27 @@ text-transform: uppercase;
 color: var(--title-text-color);
 }
 .logo-item {
-    color: var(--title-blue-color);
+color: var(--title-blue-color);
 }
 .list {
-    list-style: none;
+list-style: none;
 }
 
-.list-item {
-    text-decoration: none;
+.link-item {
+text-decoration: none;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5; 
 color: var(--title-text-color);
 
 }
-.list .list-item:active {
+.link-item:active {
 color: var(--title-blue-color);
 }
+.link-item:hover,
+.link-item:focus {
+    color: var(--link-hover-color);
+ }
 
 .link {
 color: var(--primary-text-color);
@@ -60,10 +65,14 @@ font-size: 16px;
 line-height: 1.5;
 }
 .link:active {
-    color: var(--title-blue-color);
+color: var(--title-blue-color);
+}
+.link:hover,
+.link:focus {
+ color: var(--title-blue-color);   
 }
 .hero {
-    background-color: var(--bacground-color-heroo-footer);
+background-color: var(--bacground-color-heroo-footer);
 }
 .hero-title {
 color: var(--title-wite-color);
@@ -74,19 +83,27 @@ text-align: center;
 
 }
 .hero-button {
-
+font-family: Roboto, sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
-background: var(--button-title-color);
+background-color: var(--button-title-color);
 color: var(--title-wite-color);
 cursor: pointer;
 }
 .hero-button:hover, .hero-button:focus {
-    background:var(--button-hover-color);
+background-color:var(--button-hover-color);
 }
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1px;
+color: var(--title-text-color);
 
+
+text-transform: capitalize;
+}
 .section-title.item {
 color: var(--title-text-color); 
 font-weight: 500;
@@ -104,7 +121,7 @@ line-height: 1.5;
     background-color:var(--bacground-color-heroo-footer);
 }
 .footer-logo {
-    text-decoration: none;
+text-decoration: none;
 font-family: Raleway, sans-serif;
 font-weight: 800;
 font-size: 18px;
@@ -124,19 +141,33 @@ line-height: 1.5;
 }
 /* -------------------------portfolio --------------------*/
 .filter-button {
-  font-weight: 500;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color:var(--button-title-color);
-background: --filtr-button-bacgr-color-white
-
+background-color: var(--filtr-button-bacgr-color-white);
 cursor: pointer;
 
 
 }
+
 .filter-button:hover,
 .filter-button:focus {
-  color: var(--filtr-button-hover-white);
-    background:var(--button-hover-color);
+color: var(--filtr-button-hover-white);
+background-color:var(--button-hover-color);
+}
+
+.section-subtitle {
+color: var(--title-text-color);
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+
+}
+.section-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
 }
